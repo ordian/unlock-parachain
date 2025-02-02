@@ -33,13 +33,13 @@ Normally, 0.1 KSM should be enough. We will provide an address on the relay chai
 The script will print the address of the sovereign account of your parachain on the relay chain and terminate if the balance is zero.
 
 ```bash
-cargo run -- --para-id <my-parachain-id> --refund-address "<my-refund-address>"
+cargo run -- --para-id <my-parachain-id> --refund-account "<my-refund-address>"
 ```
 
 Example:
 
 ```
-cargo run -- --para-id 3375 --refund-address "5CWUnKnvsgonAubk2CkTuSTv3TUaXQ5WT7nutgh7w646EeZv"
+cargo run -- --para-id 3375 --refund-account "5CWUnKnvsgonAubk2CkTuSTv3TUaXQ5WT7nutgh7w646EeZv"
 ```
 
 2. Once you prefunded the account, you can execute the script again and it should print you an encoded call you can sign with SUDO.
